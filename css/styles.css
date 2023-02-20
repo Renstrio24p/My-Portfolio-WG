@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    background: rgb(14,14,14);
+    background: rgb(14,14,14);
+    background: linear-gradient(180deg, 
+     rgba(14,14,14,0.26234243697478987) 0%,
+     rgba(0,0,0,1) 100%),url('../images/background-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 ,h2{
+    color: white;
+}
+
+.header-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.header-brand_span {
+    color:mediumturquoise;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
