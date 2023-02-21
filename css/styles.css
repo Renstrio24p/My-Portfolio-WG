@@ -22,7 +22,7 @@ body {
 }
 
 
-img {
+.profile {
     float: left;
     position: relative;
     margin: 10px 15px 15px 10px;
@@ -127,4 +127,62 @@ nav ul li a {
     width: 5%;
     margin-right: 50px;
     border-radius: 2px;
+}
+
+.img-div {
+    margin: 5% 5% 5% 5%;
+    padding-right: 3rem;
+}
+
+.image-about {
+    width:150px;
+    padding: 3% 2%;
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.portfolio {
+    height: 100vh;
+    padding: 50px 0;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    padding: 5%;
+    margin-top: 50px;
+}
+
+.portfolio h2 {
+    font-size: 60px;
+}
+
+.portfolio__img {
+    border-radius: 10px;
+    position: relative;
+}
+
+.portfolio__img img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.portfolio-btn {
+    background-color: yellowgreen;
+    color: white;
+    height: 84px;
+    width: 287px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: .5% 1%;
 }
