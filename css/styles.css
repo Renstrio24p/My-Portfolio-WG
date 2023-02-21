@@ -11,7 +11,6 @@ body {
 .header {
     height: 100vh;
     background: rgb(14,14,14);
-    background: rgb(14,14,14);
     background: linear-gradient(180deg, 
      rgba(14,14,14,0.26234243697478987) 0%,
      rgba(0,0,0,1) 100%),url('../images/background-1.jpg');
@@ -22,9 +21,17 @@ body {
 
 
 img {
-    width: 90px;
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+    width: 45px;
     height: auto;
-    border-radius: 100%;
+    border-radius: 50%;
+}
+
+.image {
+    display: flexbox;
+    position:relative;
 }
 
 .header-brand {
