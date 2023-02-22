@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./fonts/Poppins/Poppins-SemiBold.ttf">
 
+    <script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous"></script>
+
     <title>My Porfolio</title>
 </head>
 <body>
@@ -85,19 +87,22 @@
                 <div class="contact-row">
                     <div class="contact-left">
                         <h2>Contact Me</h2>
-                        <div class="contact-icons">
-
+                            <p> <i class="icon-envelope-alt"></i> abc@domain.com</p> 
+                            <p> <i class="icon-phone"></i> +63 90000000000</p> 
+                        <div class="contact-left-icons">
+                            <a href="#"> <i class=" fa-brands icon-facebook"></i></a>
+                            <a href="#"> <i class="fa-brands icon-linkedin"></i></a>
                         </div>
-                        <a class="contact-cv contact-btn--1" href="#"> <i class="icon-download"></i>Download CV </a>
+                        <a download class="contact-btn contact-btn--1" href="sample-cv.pdf"> <i class="icon-download"></i> Download CV </a>
                     </div>
 
                     <div class="contact-right">
                         <form action="">
-                            <input type="text">
-                            <input type="text">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <input type="text" placeholder="Your name" required>
+                            <input type="text" placeholder="Email" required>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                         </form>
-                        <button> Submit </button>
+                        <button class="contact-btn contact-btn--2" type="submit"> Submit </button>
                     </div>
                 </div>
             </div>
@@ -106,5 +111,8 @@
 
     <!-- Footer Section -->
 
+    <footer>
+        <p> Copyright 2023 &copy; Waren Gador </p>
+    </footer>
 </body>
 </html>

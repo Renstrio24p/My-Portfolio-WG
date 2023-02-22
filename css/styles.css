@@ -156,7 +156,7 @@ nav ul li a {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
     grid-gap: 40px;
     padding: 5%;
     margin-top: 50px;
@@ -173,7 +173,7 @@ nav ul li a {
 
 .portfolio__img img {
     border-radius: 10px;
-    object-fit:cover;
+    object-fit:bottom;
     width: 100%;
     height: 400px;
     display: block;
@@ -196,6 +196,7 @@ nav ul li a {
     height: 100vh;
     margin-top: 300px;
     padding: 5%;
+    color: white;
 }
 
 .contact-row {
@@ -206,5 +207,106 @@ nav ul li a {
 .contact h2{
     font-size: 20px;
 }
+
+.contact-left {
+    flex-basis: 25%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+
+.contact-left p i {
+    color: white;
+    font-size: 25px;
+}
+
+.contact-left  a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-left-icons {
+    margin-top:15px;
+}
+
+.contact-left-icons a {
+    
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #d9d9d9;
+    display: inline-block;
+}
+
+.contact-left-icons a:hover {
+    color: cyan;
+    transform: translateY(-5px);
+}
+
+.contact-btn {
+    display: block;
+    margin: 40px auto;
+    border: 1px solid cyan;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+    color: white;
+}
+
+.contact-btn--1:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.contact-btn.contact-btn--1 {
+    display: inline-block;
+}
+
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+
+form input, form textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    background: black;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border: 6px;
+}
+
+.contact-btn.contact-btn--2 {
+    display: inline-block;
+    background-color: black;
+    font-size: 18px;
+}
+
+.contact-btn--2:hover {
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
 /** Footer Section **/
+
+footer {
+    height: 15vh;
+    width:100%;
+    text-align: center;
+    padding:3% 0;
+    background-color: black;
+    font-weight: 30px;
+    color: white;
+}
 
