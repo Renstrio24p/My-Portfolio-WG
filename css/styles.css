@@ -1,4 +1,5 @@
 @import "./font-awesome/less/font-awesome.less";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@200;400;600;700&family=Roboto:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -6,10 +7,13 @@
     box-sizing: border-box;
 }
 
+/* General Global Selectors */
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Hero Section */
 .header {
     height: 100vh;
     background: rgb(14,14,14);
@@ -68,6 +72,10 @@ nav ul li a {
     font-size: 20px;
 }
 
+.header-img {
+    display: none;
+}
+
 .header-text {
     position: absolute;
     top: 50%;
@@ -79,6 +87,10 @@ nav ul li a {
 
 .header-text h1 {
     font-size: 65px;
+}
+
+.header-text--2 {
+    display: none;
 }
 
 .about {
@@ -313,11 +325,70 @@ footer {
 
 /* Media Section*/
 
+
+@media only screen and (max-width:600px) {
+      
+    .header {
+        background-image: none;
+        background-color: gray;
+    }
+
+    .header-img {
+        display: block;
+    }
+
+    .header-img img {
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .header-text--2 {
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:white;
+    }
+
+    .header-text--2 h2 {
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.5;
+    }
+
+    .header-text--2 span {
+        color:aqua;
+    }
+}
+
 /*Hero Section */
+
+/* @media only screen(max-width: 600px) { }*/
+    
 
 
 /*About Section*/
 
+/* @media only screen(max-width: 600px) { */
+    
+
+
 /* Porfolio Section */
 
+/* @media only screen(max-width: 600px) { */
+    
+
+
 /* footer Section */
+
