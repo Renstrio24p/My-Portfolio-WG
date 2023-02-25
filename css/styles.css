@@ -293,7 +293,7 @@ form input, form textarea {
     border: 0;
     outline: none;
     background: black;
-    padding: 15px;
+    padding: 10px;
     margin: 15px 0;
     font-size: 18px;
     border: 6px;
@@ -369,6 +369,33 @@ footer {
 
     .header-text--2 span {
         color:aqua;
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-container .portfolio__img {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        align-items: center;
     }
 }
 
