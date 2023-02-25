@@ -401,7 +401,19 @@ footer {
 
 /*Hero Section */
 
-/* @media only screen(max-width: 600px) { }*/
+@media only screen and (max-width: 600px) {
+
+    .about {
+        padding-top:10%;
+        height: 150vh;
+    }
+ }
+
+ .about-img {
+    display: block;
+    text-align: center;
+    padding: 0 3% 5% 0;
+ }
     
 
 
