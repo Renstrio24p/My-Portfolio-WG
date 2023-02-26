@@ -16,10 +16,10 @@ body {
 /* Hero Section */
 .header {
     height: 100vh;
-    background: rgb(14,14,14);
-    background: linear-gradient(180deg, 
-     rgba(14,14,14,0.26234243697478987) 0%,
-     rgba(0,0,0,1) 100%),url('../images/background-1.jpg');
+    background: rgb(14, 14, 14);
+    background: linear-gradient(180deg,
+            rgba(14, 14, 14, 0.26234243697478987) 0%,
+            rgba(0, 0, 0, 1) 100%), url('../images/background-1.jpg');
     background-size: cover;
     background-position: center;
 
@@ -37,7 +37,7 @@ body {
 
 .image {
     display: flexbox;
-    position:relative;
+    position: relative;
 }
 
 .header-brand {
@@ -49,7 +49,7 @@ body {
 }
 
 .header-brand_span {
-    color:mediumturquoise;
+    color: mediumturquoise;
 }
 
 nav {
@@ -57,8 +57,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0% 1%;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.7567401960784313) 0%, rgba(0,0,0,0.4822303921568627) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7567401960784313) 0%, rgba(0, 0, 0, 0.4822303921568627) 100%);
 }
 
 nav ul li {
@@ -80,7 +80,7 @@ nav ul li a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
 }
@@ -96,14 +96,18 @@ nav ul li a {
 .about {
     background-color: black;
     height: 80vh;
-   
+
+}
+
+.image-about {
+    display: none;
 }
 
 .about-text {
-    color:white;
+    color: white;
     text-align: center;
-    width:50%;
-    margin:auto;
+    width: 50%;
+    margin: auto;
 }
 
 .about-text h2 {
@@ -122,7 +126,7 @@ nav ul li a {
 .about-skills {
     display: flex;
     align-items: center;
-    width:50%;
+    width: 50%;
     flex-direction: row;
     margin: auto;
     padding-top: 3%;
@@ -141,20 +145,8 @@ nav ul li a {
     border-radius: 2px;
 }
 
-.img-div {
-    margin: 5% 5% 5% 5%;
-    padding-right: 6rem;
-
-}
-
 .image-about {
-    width:150px;
-    padding: 3% 2%;
-    float: left;
-    position: relative;
-    margin: 10px 15px 15px 10px;
-    height: auto;
-    border-radius: 50%;
+    display: none;
 }
 
 /** Portfolio Section **/
@@ -168,7 +160,7 @@ nav ul li a {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-gap: 40px;
     padding: 5%;
     margin-top: 50px;
@@ -185,7 +177,7 @@ nav ul li a {
 
 .portfolio__img img {
     border-radius: 10px;
-    object-fit:bottom;
+    object-fit: bottom;
     width: 100%;
     height: 400px;
     display: block;
@@ -216,7 +208,7 @@ nav ul li a {
     flex-direction: row;
 }
 
-.contact h2{
+.contact h2 {
     font-size: 20px;
 }
 
@@ -234,17 +226,17 @@ nav ul li a {
     font-size: 25px;
 }
 
-.contact-left  a {
+.contact-left a {
     text-decoration: none;
     color: white;
 }
 
 .contact-left-icons {
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 .contact-left-icons a {
-    
+
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -287,7 +279,8 @@ nav ul li a {
 }
 
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     border-radius: 5px;
     border: 0;
@@ -310,13 +303,14 @@ form input, form textarea {
     color: black;
     cursor: pointer;
 }
+
 /** Footer Section **/
 
 footer {
     height: 15vh;
-    width:100%;
+    width: 100%;
     text-align: center;
-    padding:3% 0;
+    padding: 3% 0;
     background-color: black;
     font-weight: 30px;
     color: white;
@@ -327,7 +321,7 @@ footer {
 
 
 @media only screen and (max-width:600px) {
-      
+
     .header {
         background-image: none;
         background-color: gray;
@@ -342,7 +336,7 @@ footer {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         height: 200px;
         width: 200px;
         border-radius: 50%;
@@ -357,8 +351,8 @@ footer {
         position: absolute;
         top: 80%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        color:white;
+        transform: translate(-50%, -50%);
+        color: white;
     }
 
     .header-text--2 h2 {
@@ -368,7 +362,7 @@ footer {
     }
 
     .header-text--2 span {
-        color:aqua;
+        color: aqua;
     }
 
     .portfolio {
@@ -404,30 +398,36 @@ footer {
 @media only screen and (max-width: 600px) {
 
     .about {
-        padding-top:10%;
+        padding-top: 10%;
         height: 150vh;
     }
- }
 
- .about-img {
-    display: block;
-    text-align: center;
-    padding: 0 3% 5% 0;
- }
-    
+    .about-img {
+        display: block;
+        width: 150px;
+        padding: 3% 2%;
+        float: left;
+        position: relative;
+        margin: 10px 15px 15px 10px;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+
+
 
 
 /*About Section*/
 
 /* @media only screen(max-width: 600px) { */
-    
+
 
 
 /* Porfolio Section */
 
 /* @media only screen(max-width: 600px) { */
-    
+
 
 
 /* footer Section */
-
