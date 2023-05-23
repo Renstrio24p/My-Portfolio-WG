@@ -197,7 +197,7 @@ nav ul li a {
 /** Contact Section **/
 .contact {
     background-color: #312D2D;
-    height: 100vh;
+    height: fit-content;
     margin-top: 300px;
     padding: 5%;
     color: white;
